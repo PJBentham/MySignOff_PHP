@@ -10,13 +10,13 @@ if(isset($_POST['email'], $_POST['p'])) {
     if(login($email, $password, $mysqli) == true) {
       // Login success
         if($email == 'pjbentham@gmail.com'){
-          header('Location: ..\..\register\index.php'); 
+          header('Location: ../../register/index.php'); 
         } else {
-          header('Location: ..\..\home\index.php');
+          header('Location: ../../home');
         }
    } else {
       // Login failed
-     header("Location: ..\..\index.php");
+     header("Location: ../../index.php");
    }
 } else { 
    // The correct POST variables were not sent to this page.

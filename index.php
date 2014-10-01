@@ -86,17 +86,15 @@ sec_session_start(); // Our custom secure way of starting a php session.
                     <form action="register/secure/process_login.php" method="post" name="login_form" class="form-horizontal">
                         <div class="control-group">
                             <div class="controls">
-	                            <label class="control-label" for="inputEmail">Email</label>
-	                            <input type="text" id="email" name="email"placeholder="Email">
-	                        	<label class="control-label" for="inputPassword">Password</label>
-	                          	<input type="password" name="password" id="password" placeholder="Password">
+	                            <span style="display: inline-block;"><label class="control-label" for="inputEmail">Email</label>
+	                            <input type="text" id="email" name="email"placeholder="Email"></span>
+	                        	<span style="display: inline-block;"><label class="control-label" for="inputPassword">Password</label>
+	                          	<input type="password" name="password" id="password" placeholder="Password"></span>
 	                          	<input type="hidden" name="p" id="p" value="">
 	                          	<br>
-	                          	<div style="padding-top:15px;" class="row">
-									<div class="col-lg-6 col-lg-offset-8">
-		                        		<button type="submit" class="btn" onclick="formhash(this.form, this.form.password);">Sign in</button>
-        	                    <!-- if login failed show this -->
-                               
+	                          	<br>
+	                          	<button style="margin-top: -6px; display: inline-block;" type="submit" class="btn" onclick="formhash(this.form, this.form.password);">Sign in</button>
+	                          	<br>
             		        </div>
                 		</div>
             		</form>
